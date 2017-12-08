@@ -7,3 +7,7 @@ npm start
 
 Demo:
 https://word-guessing-game-hack.herokuapp.com/
+
+---
+
+![alt text](screenshot.png)
