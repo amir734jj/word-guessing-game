@@ -1,0 +1,13 @@
+{
+  "name": "word-grame",
+  "description": "Simple nodejs, angularjs app to cheat in word guessing game!",
+  "private": true,
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4"
+  }
+}

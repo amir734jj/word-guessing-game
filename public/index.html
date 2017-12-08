@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html lang="en">
+
+<head>
+  <title>Word game app app</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  <!-- custom -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container" ng-app="roverApp" ng-controller="roverCtrl" ng-cloak>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Welcome to word game app</h3>
+
+        <div class="form-group">
+          <label>Enter character count:</label>
+          <input type="number" class="form-control" min="1" max="15" ng-model="characterLength" />
+        </div>
+
+        <div class="form-group" ng-show="initialized">
+          <label>Enter known characters</label>
+          <div>
+            <div ng-repeat="character in characterArray track by $index" class="inline">
+              <input type="text" class="form-control" min="1" maxlength="1" ng-model="characterArray[$index]" />
+            </div>
+          </div>
+
+          <button class="btn btn-primary" ng-click="getResult()">Get results</button>
+
+          <hr />
+
+          <pre ng-bind="result">
+            result would be here!
+          </pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
