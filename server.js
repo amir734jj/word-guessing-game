@@ -20,7 +20,12 @@ var lineReader = require('readline').createInterface({
 
 lineReader.on('line', function (line) {
   line = line.trim();
-  words.push(...line.split(/(\s+)/).map(x => x.trim()));
+  words.push(...line.split(/(\s+)/).map(x => x.trim()
+       .replace("\"", "")
+       .replace("?", "")
+       .replace("!", "")
+       .replace("'", "")
+     ));
 });
 
 lineReader.on('close', function () {
