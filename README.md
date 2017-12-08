@@ -1,4 +1,4 @@
-# detroit-labs-candidate-project
+# word-guessing-game
 Simple nodejs, angularjs app to cheat in word guessing game!
 ```ruby
 npm install
@@ -6,4 +6,4 @@ npm start
 ```
 
 Demo:
-https://detroit-labs.herokuapp.com/
+https://word-guessing-game-hack.herokuapp.com/
