@@ -25,6 +25,8 @@ lineReader.on('line', function (line) {
        .replace("?", "")
        .replace("!", "")
        .replace("'", "")
+       .replace(".", "")
+       .replace(",", "")
      ));
 });
 
