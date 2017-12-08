@@ -27,7 +27,7 @@ app.controller('roverCtrl', ['$scope', '$http', '$timeout', 'wordGameAppApiPrefi
     $scope.prettyPrintArray = function(arr) {
       var str = "[\n";
 
-      arr.map(x => {
+      arr.map(function(x) {
         str += "\t" + x + "\n";
       });
 
